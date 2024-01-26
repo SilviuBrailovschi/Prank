@@ -2,7 +2,7 @@ body {
     text-align: center;
     height: 100vh;
     line-height: 100vh;
-    background-image: url('./public/images/money-bg.jpg');
+    background-image: url('./images/money-bg.jpg');
 }
 /* button {
     width: 300px;

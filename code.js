@@ -11,7 +11,7 @@ function notifyMe() {
   if (Notification.permission !== "granted") Notification.requestPermission();
   else {
     var notification = new Notification("Wtf sunshine !", {
-      icon: "./public/images/money-emoji.png",
+      icon: "./images/money-emoji.png",
       body: "Вы были взломаны!",
     });
 
