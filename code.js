@@ -10,9 +10,10 @@ function notifyMe() {
 
   if (Notification.permission !== "granted") Notification.requestPermission();
   else {
-    var notification = new Notification("Wtf sunshine !", {
+    let notification = new Notification("Hold on tight!", {
       icon: "./images/money-emoji.png",
-      body: "Вы были взломаны!",
+      body: "Uh-oh! Looks like you've been hacked! But don't worry, it’s just a friendly reminder to stay safe online." +
+          "Don't click on this popup though 😉",
     });
 
     notification.onclick = function () {
