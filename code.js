@@ -10,11 +10,12 @@ function notifyMe() {
 
   if (Notification.permission !== "granted") Notification.requestPermission();
   else {
-    let notification = new Notification("Hold on tight!", {
+    let notification = new Notification("Tine-te bine!", {
       icon: "./images/money-emoji.png",
-      body: "Uh-oh! Looks like you've been hacked! But don't worry, it’s just a friendly reminder to stay safe online." +
-          "Don't click on this popup though 😉",
+      body: "Ups! Se pare că ai fost hack-uit/a! Dar nu-ți face griji, este doar un memento prietenos să fii în siguranță online." +
+          " Totuși, nu da click pe acest popup 😉",
     });
+
 
     notification.onclick = function () {
       window.open("https://pranx.com/hacker/");
